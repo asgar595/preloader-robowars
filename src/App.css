@@ -1,0 +1,38 @@
+
+*{
+  background: rgb(13, 13, 13); /* Ensure text is visible */
+    font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: row; 
+  
+   gap:10px;
+  margin-right: 70px;
+}
+
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Center the Spline design and reduce its size */
+.spline-design {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%; /* Reduce width */
+  height: 30%; /* Reduce height */
+  max-width: 600px; /* Optional max width */
+  max-height: 400px; /* Optional max height */
+  border-radius: 10%; /* Optional rounded corners */
+  padding: 20px; /* Optional padding */
+ 
+}
