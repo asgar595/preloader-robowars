@@ -1,10 +1,9 @@
 
 import './App.css'
-
-import Spline from '@splinetool/react-spline';
+import image from './robowars_logo.gif'
 
 import { useEffect ,useState} from 'react';
-import DotLoader from "react-spinners/DotLoader";
+import BarLoader from "react-spinners/BarLoader";
 
 
 const App = () => {
@@ -19,61 +18,22 @@ const App = () => {
 
   },[])
   return (
-    <div>
-      {
-        loading?
-           <div className="container">
+    <>
+    <img src={image}></img>
+    <div className="loader">
+    <BarLoader
        
-           <div className="spline-design"> 
-           <Spline scene="https://prod.spline.design/EIJWwdyEQzGOpaFf/scene.splinecode" />
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-           <DotLoader
-       
-        loading={loading}
-        color={'#1c69db'}
-       
-        size={110}
         
+      
+        size={1000}
+       
       />
-            
 
-            
-
-
-
-
-</div>
-        <div className="loader">
-       
-          </div>
-        
-     
-      </div>:<div>hello</div>
-
-      }
-   
-      
-     
-
-   
-      
     </div>
+    
+
+    </>
+    
   )
 }
 
